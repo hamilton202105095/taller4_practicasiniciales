@@ -27,7 +27,7 @@ export const register = (req, res) => {
 
     db.query(q, [values], (err, data) => {
       if (err) return res.status(500).json(err);
-      return res.status(200).json("User creado con exito!");
+      return res.status(200).json("Usuario creado con exito!");
     });
   });
 };
@@ -37,15 +37,15 @@ export const login = (req, res) => {
 
   db.query(q, [req.body.username], (err, data) => {
     if (err) return res.status(500).json(err);
-    if (data.length === 0) return res.status(404).json("User no encontrado");
+    if (data.length === 0) return res.status(404).json("usuario no encontrado");
 
     const checkPassword = bcrypt.compareSync(
-      req.body.password,
+      req.body.password, 
       data[0].password
     );
 
     if (!checkPassword)
-      return res.status(400).json("contraseña incorrecta");
+      return res.status(400).json("error con contraseña oo usuario");
 
     const token = jwt.sign({ id: data[0].id }, "secretkey");
 
