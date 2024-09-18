@@ -1,0 +1,105 @@
+.register {
+    height: 100vh;
+    background-color: #f4f4f9; // Color claro de fondo, limpio y formal
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .card {
+      width: 70%; // Un ancho amplio para un estilo más cómodo
+      display: flex;
+      background-color: white;
+      border-radius: 10px;
+      min-height: 600px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); // Sombra suave para darle profesionalismo
+      overflow: hidden;
+      
+      .left {
+        flex: 1;
+        background: linear-gradient(rgba(54, 25, 113, 0.7), rgba(110, 72, 187, 0.7)), url("https://ceur.usac.edu.gt/imagen/usac.gif") center;
+        background-size: cover;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        color: white;
+        
+        h1 {
+          font-size: 3rem;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+        
+        p {
+          font-size: 1rem;
+          line-height: 1.6;
+        }
+        
+        span {
+          font-size: 1rem;
+          margin-top: auto;
+        }
+        
+        button {
+          padding: 12px 20px;
+          background-color: white;
+          color: #2b2b2b;
+          border: none;
+          border-radius: 5px;
+          font-weight: bold;
+          cursor: pointer;
+          margin-top: 10px;
+          transition: background-color 0.3s ease;
+  
+          &:hover {
+            background-color: #eaeaea;
+          }
+        }
+      }
+      
+      .right {
+        flex: 1;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        
+        h1 {
+          font-size: 2rem;
+          color: #333;
+          font-weight: bold;
+          margin-bottom: 20px;
+        }
+        
+        form {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          
+          input {
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+          }
+          
+          button {
+            padding: 12px 20px;
+            background-color: #211d1d63;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+  
+            &:hover {
+              background-color: #272727;
+            }
+          }
+        }
+      }
+    }
+  }
+  
