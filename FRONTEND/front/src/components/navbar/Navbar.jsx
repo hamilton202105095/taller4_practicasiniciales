@@ -5,8 +5,12 @@ import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined
 
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../context/authContext";
+import { useContext } from "react";
 
 const Navbar = () => {
+
+  const {currentUser} = useContext(AuthContext);
 
   return (
     <div className="navbar">
@@ -25,10 +29,10 @@ const Navbar = () => {
         <NotificationsOutlinedIcon />
         <div className="user">
           <img
-            src="https://www.flickr.com/photos/jgoge123/6074793605" 
+            src={currentUser.profilepic}
             alt=""
           />
-          <span>usuario</span>
+          <span>{currentUser.name}</span>
         </div>
       </div>
     </div>

@@ -3,7 +3,6 @@ import Register from "./pages/register/register";
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
   Outlet,
   Navigate,
 
@@ -11,10 +10,15 @@ import {
 import Home from "./pages/home/Home";
 import Profile from "./pages/profile/Profile";
 import Navbar from "./components/navbar/Navbar";
+import { useContext } from "react";
+
+import { AuthContext } from "./context/authContext";
+
+
 
 function App() {
  
-  const currentUser = true
+  const {currentUser} = useContext(AuthContext);
 
   const Layout = () => {
     return (
