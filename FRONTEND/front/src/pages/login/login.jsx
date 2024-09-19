@@ -35,7 +35,7 @@ const Login = () => {
                             type="password"
                             placeholder="CONTRASEÑA"
                         />
-                        <button onAuxClick={handleLogin}>Login</button>
+                        <button onClick={handleLogin}>Login</button>
                     </form>
                 </div>
             </div>

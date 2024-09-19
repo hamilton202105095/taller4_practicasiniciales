@@ -11,8 +11,10 @@ export const AuthContextProvider = ({ children }) => {
         //to do
         setCurrentUser({
           id:1,
-          name:"usuario",
-          profilepic:"https://www.flickr.com/photos/jgoge123/6074793605"});
+          name: "marco antonio solis",
+          profilepic:
+          "https://ceur.usac.edu.gt/imagen/usac.gif "
+        });
   };
 
   useEffect(() => {
