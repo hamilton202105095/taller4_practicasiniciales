@@ -1,5 +1,5 @@
 import Login from "./pages/login/login";
-import Register from "./pages/register/register";
+import Register from "./pages/register/Register";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -11,7 +11,6 @@ import Home from "./pages/home/Home";
 import Profile from "./pages/profile/Profile";
 import Navbar from "./components/navbar/Navbar";
 import { useContext } from "react";
-
 import { AuthContext } from "./context/authContext";
 
 

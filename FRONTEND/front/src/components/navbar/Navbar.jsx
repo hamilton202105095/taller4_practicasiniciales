@@ -29,10 +29,10 @@ const Navbar = () => {
         <NotificationsOutlinedIcon />
         <div className="user">
           <img
-            src={"/upload/" + currentUser.profilepic}
+            src={"/upload/" + currentUser.fotos}
             alt=""
           />
-          <span>{currentUser.name}</span>
+          <span>{currentUser.nombre}</span>
         </div>
       </div>
     </div>
